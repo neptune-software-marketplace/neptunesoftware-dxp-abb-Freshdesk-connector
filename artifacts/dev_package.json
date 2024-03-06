@@ -1,0 +1,85 @@
+{
+	"id": "938bf627-faad-ee11-8925-0022489e23d1",
+	"createdAt": "2024-01-08T07:47:22.906Z",
+	"createdBy": "kaan1",
+	"git": {
+		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-Freshdesk-connector"
+	},
+	"name": "FreshDesk",
+	"description": null,
+	"ver": "24.3.6.1311",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "aa73f51e-badb-ee11-85fa-000d3ab233f4",
+			"application": "neptbb_freshdesk",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "938BF627-FAAD-EE11-8925-0022489E23D1"
+			}
+		}
+	],
+	"api": [
+		{
+			"id": "72e96635-8dd1-ee11-85f9-0022489e2ecd",
+			"name": "Freshdesk APIs",
+			"description": null,
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [],
+	"jsclass": [
+		{
+			"id": "e03f2a85-4ed2-ee11-85f9-0022489e2ecd",
+			"name": "get_ticket_details",
+			"description": null
+		},
+		{
+			"id": "3fc361fa-26d2-ee11-85f9-0022489e2ecd",
+			"name": "update_ticket",
+			"description": null
+		},
+		{
+			"id": "3a92e5d5-85d1-ee11-85f9-0022489e2ecd",
+			"name": "get_tickets",
+			"description": null
+		},
+		{
+			"id": "1d6b66e2-26d2-ee11-85f9-0022489e2ecd",
+			"name": "create_ticket",
+			"description": null
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "f2db30bf-85d1-ee11-85f9-0022489e2ecd",
+			"name": "freshdesk",
+			"description": ""
+		}
+	],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": []
+}

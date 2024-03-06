@@ -1,0 +1,27 @@
+{
+	"id": "3fc361fa-26d2-ee11-85f9-0022489e2ecd",
+	"createdAt": "2024-02-23T08:38:55.660Z",
+	"createdBy": "emmanuella.ndukwe@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [
+		{
+			"id": "E780C9AF-7DB8-ED11-A8E0-000D3ADA944E",
+			"name": "axios",
+			"contextname": "axios",
+			"path": "/home/planet9/ext-disk/npm-serverscript/node_modules/axios"
+		}
+	],
+	"entitySets": [],
+	"apis": [],
+	"name": "update_ticket",
+	"ver": "24.2.23.1415",
+	"description": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "f2db30bf-85d1-ee11-85f9-0022489e2ecd",
+	"package": "938bf627-faad-ee11-8925-0022489e23d1"
+}

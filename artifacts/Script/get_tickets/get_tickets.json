@@ -1,0 +1,27 @@
+{
+	"id": "3a92e5d5-85d1-ee11-85f9-0022489e2ecd",
+	"createdAt": "2024-02-22T13:25:25.456Z",
+	"createdBy": "emmanuella.ndukwe@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [
+		{
+			"id": "internal_axios",
+			"name": "axios",
+			"contextname": "axios",
+			"path": "axios"
+		}
+	],
+	"entitySets": [],
+	"apis": [],
+	"name": "get_tickets",
+	"ver": "24.2.23.1124",
+	"description": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "f2db30bf-85d1-ee11-85f9-0022489e2ecd",
+	"package": "938bf627-faad-ee11-8925-0022489e23d1"
+}

@@ -1,0 +1,17 @@
+if (typeof priority === "undefined" || priority === null || priority === "") { return; }  
+var formattedText;
+if(priority === 1){
+var formattedText = "Success";
+}
+if(priority === 2){
+var formattedText = "Indication01";
+}
+if(priority === 3){
+var formattedText = "Warning";
+}
+if(priority === 4){
+var formattedText = "Error";
+}
+
+
+return formattedText;

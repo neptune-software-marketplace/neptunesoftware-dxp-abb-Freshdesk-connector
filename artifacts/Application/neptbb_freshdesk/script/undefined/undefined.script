@@ -1,0 +1,23 @@
+.lowColor {
+  color: green;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.MediumColor {
+  color: navy;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.HighColor {
+  color: orange;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.UrgentColor {
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+}

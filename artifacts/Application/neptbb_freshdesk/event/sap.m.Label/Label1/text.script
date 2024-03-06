@@ -1,0 +1,21 @@
+if (typeof priority === "undefined" || priority === null || priority === "") { return; }  
+var formattedText;
+if(priority === 1){
+var formattedText = "Low";
+this.addStyleClass("lowColor");
+}
+if(priority === 2){
+var formattedText = "Medium";
+this.addStyleClass("MediumColor");
+}
+if(priority === 3){
+var formattedText = "High";
+this.addStyleClass("HighColor");
+}
+if(priority === 4){
+var formattedText = "Urgent";
+this.addStyleClass("UrgentColor");
+}
+ 
+ 
+return formattedText;

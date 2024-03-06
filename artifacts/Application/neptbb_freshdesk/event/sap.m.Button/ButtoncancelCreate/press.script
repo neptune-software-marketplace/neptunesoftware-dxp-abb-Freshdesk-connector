@@ -1,0 +1,18 @@
+const ticketData = modelSimpleForm.getData();
+
+var options = {
+    data: {
+        ticket: ticketData,
+        account: {
+            apiKey: account.apiKey,
+            domain: account.domain,
+        },
+    },
+};
+
+apiAPI_create_ticket(options);
+sap.m.MessageToast.show("Your tickect has been created!");
+
+//Clear Form
+modelSimpleForm.setData({})
+DialogCreateTicket.close();

@@ -1,0 +1,772 @@
+{
+	"id": "72e96635-8dd1-ee11-85f9-0022489e2ecd",
+	"createdAt": "2024-02-22T14:18:16.600Z",
+	"createdBy": "emmanuella.ndukwe@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "a72492de-e3d9-4fcb-9b64-ded07880d4dd",
+			"method": "POST",
+			"path": "/get_tickets",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "5e17b1b4-b371-4f1f-ad90-58edd2397592",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "1ae58715-645c-46e2-f16a-4e01ea0180df",
+							"name": "",
+							"objectType": "array",
+							"items": []
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"objectType": "object",
+					"items": []
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "3a92e5d5-85d1-ee11-85f9-0022489e2ecd"
+		},
+		{
+			"id": "c2ad8658-0ed1-49d0-9199-5f8e7d1aeca1",
+			"method": "POST",
+			"path": "/create_ticket",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "e715f6c2-a41e-4876-f4c1-de74516585ca",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "74d14fcf-17b4-4ec9-8751-50591a7fbd5b",
+							"name": "",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"objectType": "reference",
+					"items": [],
+					"name": "create ticket"
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "1d6b66e2-26d2-ee11-85f9-0022489e2ecd"
+		},
+		{
+			"id": "8b35314f-f7e0-439d-deff-63ed76b2d5d1",
+			"method": "POST",
+			"path": "/update",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "04706422-1259-4ed0-c07f-ed95ce89d907",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "59c3a782-145e-4d2c-b0fe-77c9d8463f2f",
+							"name": "",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"objectType": "reference",
+					"items": [],
+					"name": "ticket details"
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "3fc361fa-26d2-ee11-85f9-0022489e2ecd"
+		},
+		{
+			"id": "7d7e90e2-f61f-431f-82b0-080bfcf24ee3",
+			"method": "POST",
+			"path": "/get_ticket_details",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "e0aff220-0ed6-44aa-e4fe-a521b670fd47",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"content": [
+				{
+					"objectType": "object",
+					"items": []
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "e03f2a85-4ed2-ee11-85f9-0022489e2ecd"
+		}
+	],
+	"definitions": [
+		{
+			"id": "ea668c30-46ff-4112-ff5e-00989cb9e2b6",
+			"name": "ticket details",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "31e26771-5416-4e39-e63f-e441d400a6a1",
+					"name": "cc_emails",
+					"objectType": "array",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "64b29d70-88bb-4410-a1e8-18c835eecd3a",
+					"name": "fwd_emails",
+					"objectType": "array",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "b38fa6b3-08fe-4c28-d208-e9b40673366a",
+					"name": "reply_cc_emails",
+					"objectType": "array",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "77dccb30-663f-4e52-faa8-aa8d87a4cb66",
+					"name": "ticket_cc_emails",
+					"objectType": "array",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "507ca2a7-c4cc-4a74-9eff-55e1d61ca4f1",
+					"name": "fr_escalated",
+					"objectType": "boolean",
+					"required": false,
+					"parent": "",
+					"example": true,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "0d940b79-6e89-4e40-9663-5102982814d6",
+					"name": "spam",
+					"objectType": "boolean",
+					"required": false,
+					"parent": "",
+					"example": false,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "988aef44-0bd9-43c4-eff0-1fd8f729b727",
+					"name": "email_config_id",
+					"objectType": "number",
+					"required": false,
+					"parent": "",
+					"example": 202000021713,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "bde99dce-79fa-42c5-cc00-600925c45c2c",
+					"name": "group_id",
+					"objectType": "object",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "5a412e38-6d58-4d74-e562-e91970708ebf",
+					"name": "priority",
+					"objectType": "number",
+					"required": false,
+					"parent": "",
+					"example": 3,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "6b3a9f6d-2099-4ac4-be60-4619dbe10174",
+					"name": "requester_id",
+					"objectType": "number",
+					"required": false,
+					"parent": "",
+					"example": 202005121083,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "992f6559-02f1-4721-d34a-1e45eab1b89d",
+					"name": "responder_id",
+					"objectType": "object",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "1bd41d6e-fb9f-4bf8-8341-7625f2d62ae8",
+					"name": "source",
+					"objectType": "number",
+					"required": false,
+					"parent": "",
+					"example": 2,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "3453a529-33d7-4272-b90d-8fe9fc557bbc",
+					"name": "company_id",
+					"objectType": "object",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "c73dadac-990b-4c65-8cd2-c05470c4f85d",
+					"name": "status",
+					"objectType": "number",
+					"required": false,
+					"parent": "",
+					"example": 2,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "0dc6dc30-36c0-4013-8f44-267759b8b457",
+					"name": "subject",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "Register New users ",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "013ad2d5-b052-4c77-ec36-61485819574b",
+					"name": "association_type",
+					"objectType": "object",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "4add7cec-67da-4dd9-cba7-8973146faa91",
+					"name": "support_email",
+					"objectType": "object",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "bd38db45-5700-42fe-eb88-097a64a5549b",
+					"name": "to_emails",
+					"objectType": "object",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "6073d117-ec6d-4c87-cc13-b4edf462a4b4",
+					"name": "product_id",
+					"objectType": "number",
+					"required": false,
+					"parent": "",
+					"example": 202000018759,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "3d2210d8-bf06-48f2-84e6-bd0cf1a07094",
+					"name": "id",
+					"objectType": "number",
+					"required": false,
+					"parent": "",
+					"example": 4,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "e437eaf4-5b09-445c-a970-00923a9f2457",
+					"name": "type",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "Question",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "fa529e6e-e19f-46e0-917f-95787ae84871",
+					"name": "due_by",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "2024-02-23T16:00:00Z",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "60887139-c3b1-4575-8463-e4ebf1a3a29c",
+					"name": "fr_due_by",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "2024-02-22T17:00:00Z",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "36bce092-0ddc-497e-8357-4588cd82d0f5",
+					"name": "is_escalated",
+					"objectType": "boolean",
+					"required": false,
+					"parent": "",
+					"example": false,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "001529bb-4dce-4155-cfe1-a75bba175940",
+					"name": "cf_reference_number",
+					"objectType": "object",
+					"required": false,
+					"parent": "17a78034-3b25-4534-abed-5bf0d18c1a4a",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "17a78034-3b25-4534-abed-5bf0d18c1a4a",
+					"name": "custom_fields",
+					"objectType": "object",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": [
+						{
+							"id": "001529bb-4dce-4155-cfe1-a75bba175940",
+							"name": "cf_reference_number",
+							"objectType": "object",
+							"required": false,
+							"parent": "17a78034-3b25-4534-abed-5bf0d18c1a4a",
+							"isParent": true,
+							"enableValueHelp": false,
+							"canAddSubNode": true,
+							"enabled": true,
+							"hideNameField": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "982a428a-9fb5-4189-e62c-a62663e1c603",
+					"name": "created_at",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "2024-02-22T12:20:33Z",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "9d4fa6c5-2775-46b6-d5f8-8069affc364f",
+					"name": "updated_at",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "2024-02-22T17:13:34Z",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "d0d90bd9-7d2e-4422-a1c5-9ea11fe21e9d",
+					"name": "associated_tickets_count",
+					"objectType": "object",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "02520fc8-9c96-4889-b88f-7bc8f2aa0905",
+					"name": "tags",
+					"objectType": "array",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "3768e210-d9d8-4c80-8c79-ec70766e978d",
+					"name": "form_id",
+					"objectType": "number",
+					"required": false,
+					"parent": "",
+					"example": 202000056185,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "3e5d6c43-e246-49c3-fe45-59c6197b7f30",
+					"name": "sentiment_score",
+					"objectType": "number",
+					"required": false,
+					"parent": "",
+					"example": 9,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "7bf177cd-1bd4-4b0f-9999-b0348da9926e",
+					"name": "nr_due_by",
+					"objectType": "object",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "37a91b51-578d-4031-9e76-86f37952cb89",
+					"name": "nr_escalated",
+					"objectType": "boolean",
+					"required": false,
+					"parent": "",
+					"example": false,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				}
+			],
+			"type": "object"
+		},
+		{
+			"id": "92ef57da-2eb6-4c20-d0fa-a8e6a9a0b608",
+			"name": "create ticket",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "843cb140-4cb3-4725-8518-ea1a0bb71b34",
+					"name": "description",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "Details about the issue...",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "f4481971-48e3-4b11-a0b9-38deaa1fc9d7",
+					"name": "subject",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "Support Needed...",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "12cb1cb9-9b36-43b7-8d68-f81dbdd37839",
+					"name": "email",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "tom@outerspace.com",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "ed41ba57-cb5d-4127-d9b8-4b582a16a89b",
+					"name": "priority",
+					"objectType": "number",
+					"required": false,
+					"parent": "",
+					"example": 1,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "9449c080-7440-4ba8-c9d2-d624773bda12",
+					"name": "status",
+					"objectType": "number",
+					"required": false,
+					"parent": "",
+					"example": 2,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "3e6d4463-c28f-461a-8db3-3a7fadd8a649",
+					"name": "cc_emails",
+					"objectType": "array",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "7da0e16a-ba9b-4adf-f370-c3a14d2ed69f",
+					"name": "source",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "236faff2-b2eb-472c-d8c7-e67e67657c6d",
+					"name": "name",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				}
+			],
+			"type": "object"
+		}
+	],
+	"documentation": [],
+	"name": "Freshdesk APIs",
+	"endpoint": "/api/serverscript/freshdeskapis",
+	"ver": "24.2.23.1322",
+	"version": null,
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "938bf627-faad-ee11-8925-0022489e23d1",
+	"apiGroup": null,
+	"apiFormat": 1,
+	"roles": []
+}

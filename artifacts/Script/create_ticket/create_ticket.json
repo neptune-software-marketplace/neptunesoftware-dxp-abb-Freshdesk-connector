@@ -1,0 +1,33 @@
+{
+	"id": "1d6b66e2-26d2-ee11-85f9-0022489e2ecd",
+	"createdAt": "2024-02-23T08:38:22.510Z",
+	"createdBy": "emmanuella.ndukwe@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [
+		{
+			"id": "internal_axios",
+			"name": "axios",
+			"contextname": "axios",
+			"path": "axios"
+		},
+		{
+			"id": "88190682-2AD2-EC11-997E-0050F2C33E69",
+			"name": "fetch",
+			"contextname": "fetch",
+			"path": "/home/planet9/ext-disk/npm-serverscript/node_modules/fetch"
+		}
+	],
+	"entitySets": [],
+	"apis": [],
+	"name": "create_ticket",
+	"ver": "24.2.23.212",
+	"description": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "f2db30bf-85d1-ee11-85f9-0022489e2ecd",
+	"package": "938bf627-faad-ee11-8925-0022489e23d1"
+}

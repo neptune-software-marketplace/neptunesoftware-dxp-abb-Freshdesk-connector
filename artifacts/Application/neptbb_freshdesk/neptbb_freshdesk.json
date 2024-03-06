@@ -1,0 +1,2367 @@
+{
+	"id": "aa73f51e-badb-ee11-85fa-000d3ab233f4",
+	"createdAt": "2024-03-06T13:04:59.696Z",
+	"createdBy": "emmanuella.ndukwe@neptune-software.com",
+	"objects": [
+		{
+			"fieldNo": "a0f275da-d582-40fa-9dd4-0ce941e9e622",
+			"fieldName": "App",
+			"fieldParent": 0,
+			"fieldType": "sap.m.App",
+			"script": "",
+			"customComponent": false,
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "b7cc46c4-b4ca-4bd9-bb98-c1f508869046",
+					"fieldName": "PageList",
+					"fieldParent": "a0f275da-d582-40fa-9dd4-0ce941e9e622",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "List of Ticket",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "titleAlignment",
+							"grouping": "Properties",
+							"value": "Center",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "fee260b8-1b41-42e7-a0fd-d4135c632483",
+							"fieldName": "oBarSubHeader",
+							"fieldParent": "b7cc46c4-b4ca-4bd9-bb98-c1f508869046",
+							"fieldType": "sap.m.Bar",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "styleClassMargin",
+									"grouping": "Properties",
+									"value": "sapUiTinyMarginTopBottom",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "position",
+									"grouping": "Parent",
+									"value": "setSubHeader",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "6b69c116-d4a0-4b10-f70d-ae51fdce9d81",
+									"fieldName": "Left",
+									"fieldParent": "fee260b8-1b41-42e7-a0fd-d4135c632483",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentLeft",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "2b51aa30-ec5d-4017-d722-24823eef4631",
+											"fieldName": "ButtonRefresh",
+											"fieldParent": "6b69c116-d4a0-4b10-f70d-ae51fdce9d81",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://refresh",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.Button/ButtonRefresh/press.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "4789edd3-8335-4619-b94d-1d8b07535f28",
+									"fieldName": "Right",
+									"fieldParent": "fee260b8-1b41-42e7-a0fd-d4135c632483",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentRight",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "f020d949-9cac-4956-f2af-acd476450dbf",
+											"fieldName": "ButtonCreate",
+											"fieldParent": "4789edd3-8335-4619-b94d-1d8b07535f28",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Create",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://fa-solid/plus",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "DialogCreateTicket.open();",
+													"script": "DialogCreateTicket.open();",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "73287260-27fc-474a-ae18-dbcf6d6c01ec",
+							"fieldName": "ContainerList",
+							"fieldParent": "b7cc46c4-b4ca-4bd9-bb98-c1f508869046",
+							"fieldType": "nep.bootstrap.Container",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "8aeb4a3e-276c-4199-c839-f0e35f07cee4",
+									"fieldName": "ListTickets",
+									"fieldParent": "73287260-27fc-474a-ae18-dbcf6d6c01ec",
+									"fieldType": "sap.m.List",
+									"script": "",
+									"customComponent": false,
+									"bindingValue": "Generic Array",
+									"bindingType": "h",
+									"bindingSource": "P9",
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "9dda87c8-147a-412a-cf6f-09af2ec0bf2e",
+											"fieldName": "CustomListItem",
+											"fieldParent": "8aeb4a3e-276c-4199-c839-f0e35f07cee4",
+											"fieldType": "sap.m.CustomListItem",
+											"script": "",
+											"customComponent": false,
+											"bindingType": "h",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Active",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "highlight",
+													"grouping": "Properties",
+													"value": "{priority}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.CustomListItem/CustomListItem/press.script",
+													"translation": []
+												},
+												{
+													"attribute": "highlight",
+													"grouping": "Formatter",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.CustomListItem/CustomListItem/highlight.script",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "692a1b7a-3d76-446b-9e6e-953239bdd217",
+													"fieldName": "HBox",
+													"fieldParent": "9dda87c8-147a-412a-cf6f-09af2ec0bf2e",
+													"fieldType": "sap.m.HBox",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "wrap",
+															"grouping": "Properties",
+															"value": "Wrap",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "width",
+															"grouping": "Properties",
+															"value": "95%",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClassMargin",
+															"grouping": "Properties",
+															"value": "sapUiSmallMarginBeginEnd",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "renderType",
+															"grouping": "Properties",
+															"value": "Bare",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "justifyContent",
+															"grouping": "Properties",
+															"value": "SpaceBetween",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "fitContainer",
+															"grouping": "Properties",
+															"value": "true",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "589106e3-8e18-44aa-b848-3743b22f7bff",
+															"fieldName": "VBox",
+															"fieldParent": "692a1b7a-3d76-446b-9e6e-953239bdd217",
+															"fieldType": "sap.m.VBox",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "wrap",
+																	"grouping": "Properties",
+																	"value": "Wrap",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "styleClassMargin",
+																	"grouping": "Properties",
+																	"value": "sapUiTinyMargin",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": [
+																{
+																	"fieldNo": "93ea6cc0-0d18-44da-b688-812be5bf69a0",
+																	"fieldName": "Title",
+																	"fieldParent": "589106e3-8e18-44aa-b848-3743b22f7bff",
+																	"fieldType": "sap.m.Title",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "{subject}",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClassMargin",
+																			"grouping": "Properties",
+																			"value": "sapUiTinyMarginTopBottom",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																},
+																{
+																	"fieldNo": "8c135f7b-edab-42dc-e20e-31659baf913a",
+																	"fieldName": "Label",
+																	"fieldParent": "589106e3-8e18-44aa-b848-3743b22f7bff",
+																	"fieldType": "sap.m.Label",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "{type}",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																},
+																{
+																	"fieldNo": "99f67514-4846-4c20-e3a0-f76017002440",
+																	"fieldName": "Label1",
+																	"fieldParent": "589106e3-8e18-44aa-b848-3743b22f7bff",
+																	"fieldType": "sap.m.Label",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "{priority}",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "text",
+																			"grouping": "Formatter",
+																			"value": "Anonymous Function",
+																			"script": "file://event/sap.m.Label/Label1/text.script",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																}
+															]
+														},
+														{
+															"fieldNo": "02282ea3-b4da-4c14-a011-088e57d5fe31",
+															"fieldName": "VBox1",
+															"fieldParent": "692a1b7a-3d76-446b-9e6e-953239bdd217",
+															"fieldType": "sap.m.VBox",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "wrap",
+																	"grouping": "Properties",
+																	"value": "Wrap",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "styleClassVisibility",
+																	"grouping": "Properties",
+																	"value": "sapUiHideOnPhone",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "styleClassMargin",
+																	"grouping": "Properties",
+																	"value": "sapUiTinyMargin",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": [
+																{
+																	"fieldNo": "6ba423d2-11c6-4345-94b0-895f7c2f9468",
+																	"fieldName": "ObjectAttribute",
+																	"fieldParent": "02282ea3-b4da-4c14-a011-088e57d5fe31",
+																	"fieldType": "sap.m.ObjectAttribute",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "title",
+																			"grouping": "Properties",
+																			"value": "Created",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "{created_at}",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClassMargin",
+																			"grouping": "Properties",
+																			"value": "sapUiTinyMargin",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "text",
+																			"grouping": "Formatter",
+																			"value": "date:BrowserSetting",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																},
+																{
+																	"fieldNo": "5035e2a0-8bfe-4ccf-e2ae-cee5dcfebf7e",
+																	"fieldName": "ObjectAttribute1",
+																	"fieldParent": "02282ea3-b4da-4c14-a011-088e57d5fe31",
+																	"fieldType": "sap.m.ObjectAttribute",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "title",
+																			"grouping": "Properties",
+																			"value": "Due by",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "{due_by}",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClassMargin",
+																			"grouping": "Properties",
+																			"value": "sapUiTinyMargin",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "text",
+																			"grouping": "Formatter",
+																			"value": "date:BrowserSetting",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "6b3c9bc8-cad6-4426-d99a-9f02c4bb944a",
+					"fieldName": "PageDetails",
+					"fieldParent": "a0f275da-d582-40fa-9dd4-0ce941e9e622",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "Ticket Details",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "showNavButton",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "navButtonPress",
+							"grouping": "Events",
+							"value": "App.back();",
+							"script": "App.back();",
+							"translation": []
+						},
+						{
+							"attribute": "titleAlignment",
+							"grouping": "Properties",
+							"value": "Center",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "6c9a225c-dbc5-40cd-b775-7056169c0308",
+							"fieldName": "Container",
+							"fieldParent": "6b3c9bc8-cad6-4426-d99a-9f02c4bb944a",
+							"fieldType": "nep.bootstrap.Container",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "height",
+									"grouping": "Properties",
+									"value": "90%",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "margin",
+									"grouping": "Properties",
+									"value": "MarginTopBottom2",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "padding",
+									"grouping": "Properties",
+									"value": "Padding5",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "backgroundColor",
+									"grouping": "Properties",
+									"value": "White",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "56510969-48ce-4072-b709-9012ec0a9b31",
+									"fieldName": "SimpleFormUpdate",
+									"fieldParent": "6c9a225c-dbc5-40cd-b775-7056169c0308",
+									"fieldType": "sap.ui.layout.form.SimpleForm",
+									"script": "",
+									"customComponent": false,
+									"bindingValue": "Freshdesk APIs>create ticket",
+									"bindingType": "u",
+									"bindingSource": "API",
+									"bindingParentID": "72E96635-8DD1-EE11-85F9-0022489E2ECD",
+									"bindingPathID": "92ef57da-2eb6-4c20-d0fa-a8e6a9a0b608",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "title",
+											"grouping": "Properties",
+											"value": "Update Ticket Information",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "editable",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "4951c6e9-45a8-4e3e-d124-2e0a468b4f1b",
+											"fieldName": "lblSimpleFormUpdatesubject",
+											"fieldParent": "56510969-48ce-4072-b709-9012ec0a9b31",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Subject",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "fcd40f26-d5d0-45c5-856f-620b503ceae2",
+											"fieldName": "inSimpleFormUpdatesubject",
+											"fieldParent": "56510969-48ce-4072-b709-9012ec0a9b31",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/subject}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "a7dab110-c26b-452c-c1d9-8d051381b187",
+											"fieldName": "lblSimpleFormUpdatedescription",
+											"fieldParent": "56510969-48ce-4072-b709-9012ec0a9b31",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Description",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "50038a22-ccd6-457d-bbcd-9f2578587393",
+											"fieldName": "inSimpleFormUpdatedescription",
+											"fieldParent": "56510969-48ce-4072-b709-9012ec0a9b31",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"customComponent": false,
+											"bindingType": "h",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/description_text}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "88e395a9-a1f8-4196-9271-3ac513aa866c",
+											"fieldName": "lblSimpleFormUpdateemail",
+											"fieldParent": "56510969-48ce-4072-b709-9012ec0a9b31",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "CC Emails",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "04087662-6f59-4746-8e34-71d24e50a2b7",
+											"fieldName": "inSimpleFormUpdateemail",
+											"fieldParent": "56510969-48ce-4072-b709-9012ec0a9b31",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"customComponent": false,
+											"bindingType": "h",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/cc_emails}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "editable",
+													"grouping": "Properties",
+													"value": "false",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "8f089a61-ddf7-41dd-fd4f-4ce18ff24b54",
+											"fieldName": "lblSimpleFormUpdateDueDate",
+											"fieldParent": "56510969-48ce-4072-b709-9012ec0a9b31",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Due Date",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "c8a9c061-fbbc-4c83-b132-859f81b73289",
+											"fieldName": "DatePicker",
+											"fieldParent": "56510969-48ce-4072-b709-9012ec0a9b31",
+											"fieldType": "sap.m.DatePicker",
+											"script": "",
+											"customComponent": false,
+											"bindingType": "h",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/due_by}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "editable",
+													"grouping": "Properties",
+													"value": "false",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "value",
+													"grouping": "Formatter",
+													"value": "date:BrowserSetting",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "084e7711-d218-4e8a-8b25-4557969cc798",
+											"fieldName": "lblSimpleFormUpdatestatus",
+											"fieldParent": "56510969-48ce-4072-b709-9012ec0a9b31",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "status",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "759360de-2678-43e4-a1df-eea970c902e8",
+											"fieldName": "inSimpleFormUpdatestatus",
+											"fieldParent": "56510969-48ce-4072-b709-9012ec0a9b31",
+											"fieldType": "sap.m.Select",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "selectedKey",
+													"grouping": "Properties",
+													"value": "{/status}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "b364b92d-f11e-4d4f-f458-9ad78b4fbe65",
+													"fieldName": "Item9",
+													"fieldParent": "759360de-2678-43e4-a1df-eea970c902e8",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": []
+												},
+												{
+													"fieldNo": "9c51cfbb-eb79-4acd-882d-09391e6c6aa8",
+													"fieldName": "Item10",
+													"fieldParent": "759360de-2678-43e4-a1df-eea970c902e8",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Open",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "2",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "158bfddb-18f4-436f-de3d-175764892c35",
+													"fieldName": "Item11",
+													"fieldParent": "759360de-2678-43e4-a1df-eea970c902e8",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Pending",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "3",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "76620f4a-b9da-498e-fafc-8e81790424a0",
+													"fieldName": "Item12",
+													"fieldParent": "759360de-2678-43e4-a1df-eea970c902e8",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Resolved",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "4",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "d3d49146-d2ae-480c-e3fa-a22d294adbc9",
+											"fieldName": "lblSimpleFormUpdateType",
+											"fieldParent": "56510969-48ce-4072-b709-9012ec0a9b31",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Type",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "49dd84b7-f10f-45e1-8a0b-cf780331de68",
+											"fieldName": "inSimpleFormUpdateType",
+											"fieldParent": "56510969-48ce-4072-b709-9012ec0a9b31",
+											"fieldType": "sap.m.Select",
+											"script": "",
+											"customComponent": false,
+											"bindingType": "h",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "selectedKey",
+													"grouping": "Properties",
+													"value": "{/type}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "2e3baab7-2032-4069-ce7c-e8fbc6d3b92f",
+													"fieldName": "Item13",
+													"fieldParent": "49dd84b7-f10f-45e1-8a0b-cf780331de68",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": []
+												},
+												{
+													"fieldNo": "c5646e90-0396-41a7-f246-532a43a79dc2",
+													"fieldName": "Item14",
+													"fieldParent": "49dd84b7-f10f-45e1-8a0b-cf780331de68",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Question",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "Question",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "f7f1aaff-c4e3-4721-fb12-78ece9390ac5",
+													"fieldName": "Item15",
+													"fieldParent": "49dd84b7-f10f-45e1-8a0b-cf780331de68",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Incident",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "Incident",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "aac57bb2-4545-4286-94e7-e18076139225",
+													"fieldName": "Item16",
+													"fieldParent": "49dd84b7-f10f-45e1-8a0b-cf780331de68",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Problem",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "Problem",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "0a9510af-c27a-4f69-9ad6-45c077a03992",
+													"fieldName": "Item17",
+													"fieldParent": "49dd84b7-f10f-45e1-8a0b-cf780331de68",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Feature Request",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "Feature Request",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "f09d4439-a57e-489f-8967-30ddf36f5563",
+													"fieldName": "Item18",
+													"fieldParent": "49dd84b7-f10f-45e1-8a0b-cf780331de68",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Refund",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "Refund",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "37985cdf-3a4c-41e3-f9ef-0b17b8921924",
+							"fieldName": "oBarContent",
+							"fieldParent": "6b3c9bc8-cad6-4426-d99a-9f02c4bb944a",
+							"fieldType": "sap.m.Bar",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "position",
+									"grouping": "Parent",
+									"value": "setFooter",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "2846a519-05f6-469c-9bc2-4e1c20cfc07d",
+									"fieldName": "Middle",
+									"fieldParent": "37985cdf-3a4c-41e3-f9ef-0b17b8921924",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentMiddle",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "9f612851-f5cd-43f8-8df2-92110e8cd56f",
+											"fieldName": "ButtonCancelUpdate",
+											"fieldParent": "2846a519-05f6-469c-9bc2-4e1c20cfc07d",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Negative",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Cancel",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "App.to(PageList);",
+													"script": "App.to(PageList);",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "67ed34fb-baca-4431-8906-d1d47790fcf6",
+											"fieldName": "ButtonUpdate",
+											"fieldParent": "2846a519-05f6-469c-9bc2-4e1c20cfc07d",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Success",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Update",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.Button/ButtonUpdate/press.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "5acc2677-f1a2-4f32-bfac-6f579abc2760",
+					"fieldName": "DialogCreateTicket",
+					"fieldParent": 99999,
+					"fieldType": "sap.m.Dialog",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "Create Ticket",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "08e9a977-7f9f-4608-c4c6-97a952f2d8ae",
+							"fieldName": "oBarCustomHeader",
+							"fieldParent": "5acc2677-f1a2-4f32-bfac-6f579abc2760",
+							"fieldType": "sap.m.Bar",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "position",
+									"grouping": "Parent",
+									"value": "setCustomHeader",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "e7ce80ab-a783-4ce2-aeb8-37f1bb90ad08",
+									"fieldName": "Middle",
+									"fieldParent": "08e9a977-7f9f-4608-c4c6-97a952f2d8ae",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentMiddle",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "146f0863-352e-4284-b0b4-b8a703272981",
+											"fieldName": "Title1",
+											"fieldParent": "e7ce80ab-a783-4ce2-aeb8-37f1bb90ad08",
+											"fieldType": "sap.m.Title",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "textAlign",
+													"grouping": "Properties",
+													"value": "Center",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Create Ticket",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "742f718f-8585-4583-c48c-32c77f74977d",
+									"fieldName": "Right",
+									"fieldParent": "08e9a977-7f9f-4608-c4c6-97a952f2d8ae",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentRight",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "88dce657-5db4-4d80-869f-d25db9ec4b6f",
+											"fieldName": "ButtoncloseDialog",
+											"fieldParent": "742f718f-8585-4583-c48c-32c77f74977d",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Negative",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://fa-solid/window-close",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "DialogCreateTicket.close()",
+													"script": "DialogCreateTicket.close()",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "e56f4f08-3333-45aa-9a92-f83b0e2bc7ea",
+							"fieldName": "HBoxDialog",
+							"fieldParent": "5acc2677-f1a2-4f32-bfac-6f579abc2760",
+							"fieldType": "sap.m.HBox",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "justifyContent",
+									"grouping": "Properties",
+									"value": "Center",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "alignContent",
+									"grouping": "Properties",
+									"value": "Center",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "de933407-c3b0-40d8-cfb4-8075433c112b",
+									"fieldName": "SimpleForm",
+									"fieldParent": "e56f4f08-3333-45aa-9a92-f83b0e2bc7ea",
+									"fieldType": "sap.ui.layout.form.SimpleForm",
+									"script": "",
+									"customComponent": false,
+									"bindingValue": "Freshdesk APIs>create ticket",
+									"bindingType": "u",
+									"bindingSource": "API",
+									"bindingParentID": "72E96635-8DD1-EE11-85F9-0022489E2ECD",
+									"bindingPathID": "92ef57da-2eb6-4c20-d0fa-a8e6a9a0b608",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "layout",
+											"grouping": "Properties",
+											"value": "ResponsiveGridLayout",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "labelSpanM",
+											"grouping": "Properties",
+											"value": "8",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "labelSpanL",
+											"grouping": "Properties",
+											"value": "8",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "editable",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "59f793d1-f285-4d5f-f945-dbf2ffc85ec1",
+											"fieldName": "lblSimpleFormName",
+											"fieldParent": "de933407-c3b0-40d8-cfb4-8075433c112b",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Name",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "9a591f2f-8f68-49d9-802d-17e669e2aced",
+											"fieldName": "inSimpleFormName",
+											"fieldParent": "de933407-c3b0-40d8-cfb4-8075433c112b",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"customComponent": false,
+											"bindingType": "h",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/name}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "95131a1b-0207-4387-ce0b-b847b9e6ca76",
+											"fieldName": "lblSimpleFormemail",
+											"fieldParent": "de933407-c3b0-40d8-cfb4-8075433c112b",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Email Address",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "6344bc49-8611-40e7-c242-15668278f3be",
+											"fieldName": "inSimpleFormemail",
+											"fieldParent": "de933407-c3b0-40d8-cfb4-8075433c112b",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"customComponent": false,
+											"bindingType": "h",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/email}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Email",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "6f711baf-b0a1-4c8b-e9d3-948d5b12e7ec",
+											"fieldName": "lblSimpleFormsubject",
+											"fieldParent": "de933407-c3b0-40d8-cfb4-8075433c112b",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Subject",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "21c67e0d-c39d-4dd1-c0a9-c71466537d80",
+											"fieldName": "inSimpleFormsubject",
+											"fieldParent": "de933407-c3b0-40d8-cfb4-8075433c112b",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/subject}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "f5ffcd53-c6bf-4ed4-8f8f-352bc577e9d3",
+											"fieldName": "lblSimpleFormDescr",
+											"fieldParent": "de933407-c3b0-40d8-cfb4-8075433c112b",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Desciption",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "a00f78f4-c8a0-4f55-98ec-96b5cf240cd6",
+											"fieldName": "inSimpleFormDescr",
+											"fieldParent": "de933407-c3b0-40d8-cfb4-8075433c112b",
+											"fieldType": "sap.m.TextArea",
+											"script": "",
+											"customComponent": false,
+											"bindingType": "h",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/description}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "7c2d25d5-34eb-4e64-b272-c93efa7c34ed",
+											"fieldName": "lblSimpleFormPriority",
+											"fieldParent": "de933407-c3b0-40d8-cfb4-8075433c112b",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Priority",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "bbada30c-1a82-4afc-bd4b-3c07c34f1eae",
+											"fieldName": "inSimpleFormPriority",
+											"fieldParent": "de933407-c3b0-40d8-cfb4-8075433c112b",
+											"fieldType": "sap.m.Select",
+											"script": "",
+											"customComponent": false,
+											"bindingType": "h",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "selectedKey",
+													"grouping": "Properties",
+													"value": "{/priority}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "6e2aa531-4c86-4dcb-a00d-1ac238398713",
+													"fieldName": "Item3",
+													"fieldParent": "bbada30c-1a82-4afc-bd4b-3c07c34f1eae",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": []
+												},
+												{
+													"fieldNo": "8f78a3a9-cab3-4eb3-b5f8-8e7cd0566b07",
+													"fieldName": "Item2",
+													"fieldParent": "bbada30c-1a82-4afc-bd4b-3c07c34f1eae",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Low",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "1",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "5077dd5c-25b0-4a2b-b30b-e19bb1b8f3d1",
+													"fieldName": "Item1",
+													"fieldParent": "bbada30c-1a82-4afc-bd4b-3c07c34f1eae",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Medium",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "2",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "bd3e5f44-04e0-4af4-be3b-9c1b9df6799e",
+													"fieldName": "Item",
+													"fieldParent": "bbada30c-1a82-4afc-bd4b-3c07c34f1eae",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "High",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "3",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "a36d4118-0da2-47cd-db33-9e1d95618228",
+													"fieldName": "Item8",
+													"fieldParent": "bbada30c-1a82-4afc-bd4b-3c07c34f1eae",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Urgent",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "4",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "a7e3701d-1716-441e-f621-0691455a8ecd",
+											"fieldName": "lblSimpleFormsource",
+											"fieldParent": "de933407-c3b0-40d8-cfb4-8075433c112b",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "source",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "486e1310-15aa-48bf-c5c7-33e6c2f528c7",
+											"fieldName": "inSimpleFormsource",
+											"fieldParent": "de933407-c3b0-40d8-cfb4-8075433c112b",
+											"fieldType": "sap.m.Select",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "selectedKey",
+													"grouping": "Properties",
+													"value": "{/source}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "20241feb-6d5b-4b2e-9282-575b6f68b354",
+													"fieldName": "Item4",
+													"fieldParent": "486e1310-15aa-48bf-c5c7-33e6c2f528c7",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": []
+												},
+												{
+													"fieldNo": "fa720690-6451-4456-8ce9-5e96a5a455e2",
+													"fieldName": "Item5",
+													"fieldParent": "486e1310-15aa-48bf-c5c7-33e6c2f528c7",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Neptune DXP - Open Edition",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "1",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "a0cc2397-2efb-4cb4-8c20-d4ede6697aed",
+													"fieldName": "Item6",
+													"fieldParent": "486e1310-15aa-48bf-c5c7-33e6c2f528c7",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Neptune DXP - SAP Edition",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "2",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "e2f32651-a470-45e3-8faf-d4e021c549ab",
+													"fieldName": "Item7",
+													"fieldParent": "486e1310-15aa-48bf-c5c7-33e6c2f528c7",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Neptune DXP Portal",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "3",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "33b3f470-4091-4198-970a-4ab9d6929c2e",
+											"fieldName": "lblSimpleFormccEmails",
+											"fieldParent": "de933407-c3b0-40d8-cfb4-8075433c112b",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "CC Emails",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "345f773f-445e-49ec-bec8-31a0f74de622",
+											"fieldName": "inSimpleFormCC",
+											"fieldParent": "de933407-c3b0-40d8-cfb4-8075433c112b",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"customComponent": false,
+											"bindingType": "h",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/cc_emails}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Email",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "e2f47481-256d-4361-db80-ed193aaf396c",
+											"fieldName": "lblSimpleFormUpdateTypeCreate",
+											"fieldParent": "de933407-c3b0-40d8-cfb4-8075433c112b",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Type",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "78a6ddd3-eb60-4de8-ba26-ec90309f8e95",
+											"fieldName": "inSimpleFormUpdateTypeCreate",
+											"fieldParent": "de933407-c3b0-40d8-cfb4-8075433c112b",
+											"fieldType": "sap.m.Select",
+											"script": "",
+											"customComponent": false,
+											"bindingType": "h",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "selectedKey",
+													"grouping": "Properties",
+													"value": "{/type}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "cb5bd22d-c6a7-4f65-a8ad-adde874704a2",
+													"fieldName": "Item19",
+													"fieldParent": "78a6ddd3-eb60-4de8-ba26-ec90309f8e95",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": []
+												},
+												{
+													"fieldNo": "03ee9662-bf04-4a5c-cace-2518b070de86",
+													"fieldName": "Item20",
+													"fieldParent": "78a6ddd3-eb60-4de8-ba26-ec90309f8e95",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Question",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "Question",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "a58cd092-928d-4dfd-e5ea-0a3275230bf2",
+													"fieldName": "Item21",
+													"fieldParent": "78a6ddd3-eb60-4de8-ba26-ec90309f8e95",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Incident",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "Incident",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "818c8f4d-0707-4dc4-e718-e015876b9cdb",
+													"fieldName": "Item22",
+													"fieldParent": "78a6ddd3-eb60-4de8-ba26-ec90309f8e95",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Problem",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "Problem",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "412e6914-f726-4801-bf24-78700142c4a7",
+													"fieldName": "Item23",
+													"fieldParent": "78a6ddd3-eb60-4de8-ba26-ec90309f8e95",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Feature Request",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "Feature Request",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "9851a03c-b71b-4834-f12f-00b1a77e36df",
+													"fieldName": "Item24",
+													"fieldParent": "78a6ddd3-eb60-4de8-ba26-ec90309f8e95",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Refund",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "Refund",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "8be9161c-23fe-4969-f32f-45cd7b7ce219",
+							"fieldName": "DialogButtons",
+							"fieldParent": "5acc2677-f1a2-4f32-bfac-6f579abc2760",
+							"fieldType": "neptune.DialogButtons",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "03ccedad-c6a5-4ce3-b39e-8971704d0afb",
+									"fieldName": "ButtoncancelCreate",
+									"fieldParent": "8be9161c-23fe-4969-f32f-45cd7b7ce219",
+									"fieldType": "sap.m.Button",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "type",
+											"grouping": "Properties",
+											"value": "Success",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Submit",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "press",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.m.Button/ButtoncancelCreate/press.script",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "3e3b4f52-1b64-4d97-a862-44c8e4912221",
+					"fieldName": "API_update_ticket",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"customComponent": false,
+					"restSource": "72e96635-8dd1-ee11-85f9-0022489e2ecd",
+					"restOperation": "8b35314f-f7e0-439d-deff-63ed76b2d5d1",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "6c7f9c60-73e8-43da-ed8d-a08b0468ef54",
+					"fieldName": "API_create_ticket",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"customComponent": false,
+					"restSource": "72e96635-8dd1-ee11-85f9-0022489e2ecd",
+					"restOperation": "c2ad8658-0ed1-49d0-9199-5f8e7d1aeca1",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "328db747-3b72-434d-fc7e-9a3468d3c0ab",
+					"fieldName": "API_get_tickets",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"customComponent": false,
+					"restSource": "72e96635-8dd1-ee11-85f9-0022489e2ecd",
+					"restOperation": "a72492de-e3d9-4fcb-9b64-ded07880d4dd",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "ajaxSuccess",
+							"grouping": "Events",
+							"value": "modelListTickets.setData(xhr.responseJSON);",
+							"script": "modelListTickets.setData(xhr.responseJSON);",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "80345cb3-8e02-4525-8a49-bb28d0db6877",
+					"fieldName": "API_get_ticket_details",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"customComponent": false,
+					"restSource": "72e96635-8dd1-ee11-85f9-0022489e2ecd",
+					"restOperation": "7d7e90e2-f61f-431f-82b0-080bfcf24ee3",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "5f90d4fd-ab99-4863-c858-e40a090bb66b",
+					"fieldName": "Javascript",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": "file://script/neptune.Script/Javascript.js",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"ver": "24.3.6.146",
+	"application": "neptbb_freshdesk",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": true,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_horizon",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "file:///css.css",
+	"compiledCss": "file://script/undefined/undefined.script",
+	"header": "",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": true,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": null,
+	"printWidth": null,
+	"generateVersionOnActivation": false,
+	"activationHistoryCount": 0,
+	"apis": [
+		{
+			"id": "72e96635-8dd1-ee11-85f9-0022489e2ecd",
+			"name": "Freshdesk APIs",
+			"ver": "24.2.23.1322"
+		}
+	],
+	"package": "938bf627-faad-ee11-8925-0022489e23d1"
+}
