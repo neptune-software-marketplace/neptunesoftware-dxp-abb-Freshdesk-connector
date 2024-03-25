@@ -7,7 +7,7 @@
 	},
 	"name": "FreshDesk",
 	"description": null,
-	"ver": "24.3.6.1311",
+	"ver": "24.3.25.1644",
 	"enableCICD": true,
 	"apps": [
 		{
@@ -45,7 +45,13 @@
 	],
 	"odataSource": [],
 	"odataMock": [],
-	"dictionary": [],
+	"dictionary": [
+		{
+			"id": "1764e888-85ea-ee11-aaee-000d3a64f286",
+			"name": "neptune_connector_freshdesk",
+			"description": null
+		}
+	],
 	"jsclass": [
 		{
 			"id": "e03f2a85-4ed2-ee11-85f9-0022489e2ecd",

@@ -1,0 +1,71 @@
+{
+	"id": "1764e888-85ea-ee11-aaee-000d3a64f286",
+	"createdAt": "2024-03-25T08:56:18.213Z",
+	"createdBy": "emmanuella.ndukwe@neptune-software.com",
+	"fields": [
+		{
+			"id": "e9be7939-f968-48ae-d234-8856678c5176",
+			"fieldName": "domain",
+			"fieldType": "text",
+			"isUnique": false
+		},
+		{
+			"id": "217995e4-cd87-4973-c6d1-d9978c8dabb7",
+			"fieldName": "apikey",
+			"fieldType": "text",
+			"isUnique": false
+		},
+		{
+			"id": "c189f81d-eab5-4983-feb5-4e829aa68569",
+			"fieldName": "name",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "486cee51-a839-4208-84e9-34d4017bdb08",
+			"fieldName": "description",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "06c6e867-8174-4a10-e74c-37b246c20eb5",
+			"fieldName": "type",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "0e02a72d-be5f-4f73-ca40-c7ae6cd98bde",
+			"fieldName": "config",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "effa4d08-315b-4642-8804-ad0099f1f2ee",
+			"fieldName": "metadata",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "83ad916f-3795-431c-9039-45c371cd0714",
+			"fieldName": "authKey",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "neptune_connector_freshdesk",
+	"description": null,
+	"ver": "24.3.25.1749",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "938bf627-faad-ee11-8925-0022489e23d1",
+	"rolesRead": [],
+	"rolesWrite": []
+}
