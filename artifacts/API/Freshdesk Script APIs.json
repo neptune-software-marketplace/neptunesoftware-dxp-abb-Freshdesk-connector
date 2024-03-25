@@ -129,6 +129,78 @@
 			"auth": [],
 			"endpoints": [],
 			"serverScript": "e03f2a85-4ed2-ee11-85f9-0022489e2ecd"
+		},
+		{
+			"id": "74a252b5-a15c-4095-b746-eb424719225a",
+			"method": "POST",
+			"path": "/connector",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [],
+			"content": [
+				{
+					"objectType": "reference",
+					"items": [
+						{
+							"name": "",
+							"objectType": "string",
+							"required": false,
+							"children": []
+						}
+					],
+					"name": "connector"
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "85011ca2-85ea-ee11-aaee-000d3a64f286"
+		},
+		{
+			"id": "7e8ca930-40e3-46e3-a3b6-e39d51e1dcc6",
+			"method": "GET",
+			"path": "/connector_details",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "f682db1f-4854-466f-c29b-fd7590446db1",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "c5c538ba-ae27-4e3a-ec8e-9dbe03942f28",
+							"name": "connector",
+							"objectType": "reference"
+						}
+					]
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "b1340fc7-8bea-ee11-aaee-000d3a64f286"
+		},
+		{
+			"id": "1b4eca6e-063b-4ba2-e47f-1285abfa33c8",
+			"method": "POST",
+			"path": "/delete",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [],
+			"content": [
+				{
+					"objectType": "reference",
+					"items": [],
+					"name": "ticket details"
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "05637227-b7ea-ee11-aaee-000d3a64f286"
 		}
 	],
 	"definitions": [
@@ -743,12 +815,186 @@
 				}
 			],
 			"type": "object"
+		},
+		{
+			"id": "475d3f91-ee3c-4f96-a973-1decd2fa09de",
+			"name": "connector",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "6b781490-5cf4-4511-e2c0-a4256c0b878d",
+					"name": "id",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "83ACCDC6-89EA-EE11-AAEE-000D3A64F286",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "feae7eef-da0f-4904-c58e-cad14851b256",
+					"name": "createdAt",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "1711358806210",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "172f616a-2ad5-4f4e-b003-f9817cb0f573",
+					"name": "updatedAt",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "1711358806210",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "193330e3-6a42-4b39-9f59-66b2fcd808b9",
+					"name": "createdBy",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "emmanuella.ndukwe@neptune-software.com",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "f842db5e-dccb-4574-c8a2-2a176f5f4192",
+					"name": "updatedBy",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "emmanuella.ndukwe@neptune-software.com",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "44f47e2e-c38d-4255-ad47-e3b8e5184856",
+					"name": "domain",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "neptune",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "1641fbd3-4986-4781-8fc4-818677a893f5",
+					"name": "apikey",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "dW5kZWZpbmVkOlg=",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "09162368-3c1e-4f02-d87e-47759823361e",
+					"name": "name",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "test",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "ffec4227-c913-48c9-ca66-3303adff25c1",
+					"name": "description",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "test",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "084a4f87-7cd5-465e-aa24-bf9a389a065f",
+					"name": "type",
+					"objectType": "object",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "e578db2f-a07c-4865-8cb2-1ef1d9c00f36",
+					"name": "config",
+					"objectType": "object",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "7652fa32-da29-44e3-b80b-28d27281ae9d",
+					"name": "metadata",
+					"objectType": "object",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				}
+			],
+			"type": "object"
 		}
 	],
 	"documentation": [],
-	"name": "Freshdesk APIs",
-	"endpoint": "/api/serverscript/freshdeskapis",
-	"ver": "24.2.23.1322",
+	"name": "Freshdesk Script APIs",
+	"endpoint": "/api/serverscript/freshdeskscriptapis",
+	"ver": "24.3.25.1454",
 	"version": null,
 	"description": null,
 	"mediaType": null,

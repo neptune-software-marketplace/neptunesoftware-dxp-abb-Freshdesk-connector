@@ -6,7 +6,7 @@ const reqBody = req.body;
 const systemDetails = await entities.neptune_connector_freshdesk.createQueryBuilder("alias").getOne();
 
 const config = {
-  method: 'get',
+  method: 'delete',
   maxBodyLength: Infinity,
   url: `https://${systemDetails.domain}.freshdesk.com/api/v2/tickets/${reqBody.id}`,
   headers: { 

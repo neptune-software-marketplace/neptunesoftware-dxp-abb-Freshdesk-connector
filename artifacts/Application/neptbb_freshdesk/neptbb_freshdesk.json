@@ -1277,6 +1277,20 @@
 							"value": "Create Ticket",
 							"script": "",
 							"translation": []
+						},
+						{
+							"attribute": "styleClassPadding",
+							"grouping": "Properties",
+							"value": "sapUiContentPadding",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "resizable",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
 						}
 					],
 					"data": [
@@ -1814,6 +1828,7 @@
 											"fieldType": "sap.m.Label",
 											"script": "",
 											"customComponent": false,
+											"disabled": true,
 											"request": [],
 											"response": [],
 											"attributes": [
@@ -1834,6 +1849,7 @@
 											"fieldType": "sap.m.Select",
 											"script": "",
 											"customComponent": false,
+											"disabled": true,
 											"request": [],
 											"response": [],
 											"attributes": [
@@ -1853,6 +1869,7 @@
 													"fieldType": "sap.ui.core.Item",
 													"script": "",
 													"customComponent": false,
+													"disabled": true,
 													"request": [],
 													"response": [],
 													"attributes": [],
@@ -1865,6 +1882,7 @@
 													"fieldType": "sap.ui.core.Item",
 													"script": "",
 													"customComponent": false,
+													"disabled": true,
 													"request": [],
 													"response": [],
 													"attributes": [
@@ -1892,6 +1910,7 @@
 													"fieldType": "sap.ui.core.Item",
 													"script": "",
 													"customComponent": false,
+													"disabled": true,
 													"request": [],
 													"response": [],
 													"attributes": [
@@ -1919,6 +1938,7 @@
 													"fieldType": "sap.ui.core.Item",
 													"script": "",
 													"customComponent": false,
+													"disabled": true,
 													"request": [],
 													"response": [],
 													"attributes": [
@@ -2272,6 +2292,13 @@
 					"response": [],
 					"attributes": [
 						{
+							"attribute": "setInitLoad",
+							"grouping": "Model",
+							"value": "online",
+							"script": "",
+							"translation": []
+						},
+						{
 							"attribute": "ajaxSuccess",
 							"grouping": "Events",
 							"value": "modelListTickets.setData(xhr.responseJSON);",
@@ -2302,6 +2329,7 @@
 					"fieldType": "neptune.Script",
 					"script": "file://script/neptune.Script/Javascript.js",
 					"customComponent": false,
+					"disabled": true,
 					"request": [],
 					"response": [],
 					"attributes": [],
@@ -2315,7 +2343,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.3.6.146",
+	"ver": "24.3.25.1535",
 	"application": "neptbb_freshdesk",
 	"title": "",
 	"description": "",
@@ -2359,8 +2387,8 @@
 	"apis": [
 		{
 			"id": "72e96635-8dd1-ee11-85f9-0022489e2ecd",
-			"name": "Freshdesk APIs",
-			"ver": "24.2.23.1322"
+			"name": "Freshdesk Script APIs",
+			"ver": "24.3.25.1454"
 		}
 	],
 	"package": "938bf627-faad-ee11-8925-0022489e23d1"

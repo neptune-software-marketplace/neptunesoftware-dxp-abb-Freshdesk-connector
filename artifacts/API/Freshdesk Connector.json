@@ -1,0 +1,270 @@
+{
+	"id": "0b576f9e-b8ea-ee11-aaee-000d3a64f286",
+	"createdAt": "2024-03-25T15:01:55.816Z",
+	"createdBy": "emmanuella.ndukwe@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "c42014ca-f0ec-44e1-d904-fa40acdc54cd",
+			"method": "GET",
+			"path": "/getConnector",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "a42d2fa8-11c1-4b25-fdd3-2392ace94e47",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "9c87d712-2eba-4e2c-d255-9a84a0e207a3",
+							"name": "Connector Details",
+							"objectType": "reference"
+						}
+					]
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "65696927-b8ea-ee11-aaee-000d3a64f286"
+		},
+		{
+			"id": "11f9cd88-1f10-4e19-ad15-235fd5cd0a42",
+			"method": "POST",
+			"path": "/saveConnector",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [],
+			"content": [
+				{
+					"objectType": "reference",
+					"items": [],
+					"name": "Connector Details"
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "a982381b-b8ea-ee11-aaee-000d3a64f286",
+			"summary": "Save connector details"
+		}
+	],
+	"definitions": [
+		{
+			"id": "95937f2c-c980-489b-f018-b25c8ea9e57b",
+			"name": "Connector Details",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "d235dae4-6473-4257-da9e-e9fec04da76f",
+					"name": "id",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "719010BD-A7EA-EE11-AAEE-000D3A64F286",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "29cff5a2-b403-4de0-a453-da49476a06a1",
+					"name": "createdAt",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "1711371665750",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "08a2d273-b8e5-413a-e303-e2ff06ffb3f7",
+					"name": "updatedAt",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "1711371665749",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "6ae52f55-75e5-45a0-f276-0e584e0af3f4",
+					"name": "createdBy",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "emmanuella.ndukwe@neptune-software.com",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "4cb2a47f-15bc-4316-9c8b-564a4dc1cb3d",
+					"name": "updatedBy",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "emmanuella.ndukwe@neptune-software.com",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "f3ab1286-b9e0-4ead-a2d7-d94ac8924fec",
+					"name": "domain",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "studentcommunity",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "2f8aa239-97e2-4416-d450-7dd5f84a1223",
+					"name": "apikey",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "i3EfDcQCzNk32cjbtSRU",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "5a27a523-dc5a-4998-ab67-f73dfe717490",
+					"name": "name",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "Student Community",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "43953adb-f43a-45c4-db1a-ce852aadc0e9",
+					"name": "description",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "Test ",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "effb67b7-af0b-482b-cd95-e62409e0b601",
+					"name": "type",
+					"objectType": "object",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "fb5b7f21-2afb-4f12-8d22-063db7912d00",
+					"name": "config",
+					"objectType": "object",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "13dcb15f-c005-4188-91d8-e73e093d4577",
+					"name": "metadata",
+					"objectType": "object",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "0083fbea-cfb7-497c-8017-78614bc250ef",
+					"name": "authKey",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "Basic aTNFZkRjUUN6TmszMmNqYnRTUlU6WA==",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				}
+			],
+			"type": "object"
+		}
+	],
+	"documentation": [],
+	"name": "Freshdesk Connector",
+	"endpoint": "/api/serverscript/freshdeskconnector",
+	"ver": "24.3.25.154",
+	"version": null,
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "938bf627-faad-ee11-8925-0022489e23d1",
+	"apiGroup": null,
+	"apiFormat": 1,
+	"roles": []
+}

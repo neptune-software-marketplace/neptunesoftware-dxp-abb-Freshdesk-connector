@@ -3,12 +3,12 @@ const context = oEvent.oSource.getBindingContext();
 // Get Entire Model
 const data = context.getObject();
 var options = {
-    data: {id: data.id, account: account},
+    data: {id: data.id},
     
 };
 
 apiAPI_get_ticket_details(options).then((result)=>{
-    console.log(result)
+    //console.log(result)
 modelSimpleFormUpdate.setData(result);
 })
 

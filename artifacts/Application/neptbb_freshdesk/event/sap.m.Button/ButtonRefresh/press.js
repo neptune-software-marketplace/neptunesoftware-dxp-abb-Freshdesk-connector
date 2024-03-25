@@ -1,10 +1,4 @@
-var options = {
-    data: {
-      apiKey: account.apiKey,
-      domain: account.domain
-    }
-};
 
-apiAPI_get_tickets(options)
+apiAPI_get_tickets()
 
 sap.m.MessageToast.show("Refreshed!");

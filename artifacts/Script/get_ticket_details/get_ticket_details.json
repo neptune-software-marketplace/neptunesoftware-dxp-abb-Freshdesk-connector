@@ -11,10 +11,16 @@
 			"path": "axios"
 		}
 	],
-	"entitySets": [],
+	"entitySets": [
+		{
+			"id": "1764E888-85EA-EE11-AAEE-000D3A64F286",
+			"name": "neptune_connector_freshdesk",
+			"contextname": "neptune_connector_freshdesk"
+		}
+	],
 	"apis": [],
 	"name": "get_ticket_details",
-	"ver": "24.2.23.1331",
+	"ver": "24.3.25.1345",
 	"description": null,
 	"content": "file:///content.js",
 	"useAsGlobalScript": false,

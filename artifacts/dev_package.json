@@ -18,12 +18,27 @@
 			"package": {
 				"id": "938BF627-FAAD-EE11-8925-0022489E23D1"
 			}
+		},
+		{
+			"id": "41316f1c-80ea-ee11-aaee-000d3a64f286",
+			"application": "neptune_connector_freshdesk",
+			"title": "Freshdesk Connector",
+			"description": "Freshdesk Connector",
+			"package": {
+				"id": "938BF627-FAAD-EE11-8925-0022489E23D1"
+			}
 		}
 	],
 	"api": [
 		{
 			"id": "72e96635-8dd1-ee11-85f9-0022489e2ecd",
-			"name": "Freshdesk APIs",
+			"name": "Freshdesk Script APIs",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "0b576f9e-b8ea-ee11-aaee-000d3a64f286",
+			"name": "Freshdesk Connector",
 			"description": null,
 			"apiGroup": null
 		}
@@ -35,6 +50,16 @@
 		{
 			"id": "e03f2a85-4ed2-ee11-85f9-0022489e2ecd",
 			"name": "get_ticket_details",
+			"description": null
+		},
+		{
+			"id": "a982381b-b8ea-ee11-aaee-000d3a64f286",
+			"name": "saveConnector",
+			"description": null
+		},
+		{
+			"id": "65696927-b8ea-ee11-aaee-000d3a64f286",
+			"name": "getConnector",
 			"description": null
 		},
 		{
@@ -51,12 +76,22 @@
 			"id": "1d6b66e2-26d2-ee11-85f9-0022489e2ecd",
 			"name": "create_ticket",
 			"description": null
+		},
+		{
+			"id": "05637227-b7ea-ee11-aaee-000d3a64f286",
+			"name": "delete_ticket",
+			"description": null
 		}
 	],
 	"jsscript_group": [
 		{
 			"id": "f2db30bf-85d1-ee11-85f9-0022489e2ecd",
 			"name": "freshdesk",
+			"description": ""
+		},
+		{
+			"id": "34d56a08-b8ea-ee11-aaee-000d3a64f286",
+			"name": "FreshdeskConnector",
 			"description": ""
 		}
 	],
@@ -66,8 +101,20 @@
 	"reports": [],
 	"api_authentication": [],
 	"api_group": [],
-	"tile": [],
-	"category": [],
+	"tile": [
+		{
+			"id": "3971d116-88ea-ee11-aaee-000d3a64f286",
+			"description": "Connect to Freshdesk   ",
+			"name": "External System Connector: Freshdesk Connector "
+		}
+	],
+	"category": [
+		{
+			"id": "7fa71534-c0ea-ee11-aaee-000d3a64f286",
+			"description": null,
+			"name": "External Connectors "
+		}
+	],
 	"launchpad": [],
 	"certificates": [],
 	"role": [],

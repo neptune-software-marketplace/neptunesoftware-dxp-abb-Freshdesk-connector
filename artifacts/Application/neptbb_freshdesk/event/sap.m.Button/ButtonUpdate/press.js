@@ -1,11 +1,5 @@
 const ticketData = modelSimpleFormUpdate.getData();
-// {
-//            
-//             subject: ticketData.subject,
-//             
-//             status: parseInt(ticketData.status),
-//             
-//         },
+
 var options = {
     data: {
         id: ticketData.id,
@@ -14,16 +8,12 @@ var options = {
             status: parseInt(ticketData.status),
              description: ticketData.description_text, 
              type: ticketData.type
-        },
-        account: {
-            apiKey: account.apiKey,
-            domain: account.domain,
-        },
+        }
     },
 };
 
 apiAPI_update_ticket(options);
-console.log(options);
+//console.log(options);
 sap.m.MessageToast.show("Successfully Updated!");
 
 //Clear Form

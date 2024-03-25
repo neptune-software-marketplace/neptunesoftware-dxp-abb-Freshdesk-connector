@@ -11,10 +11,16 @@
 			"path": "/home/planet9/ext-disk/npm-serverscript/node_modules/axios"
 		}
 	],
-	"entitySets": [],
+	"entitySets": [
+		{
+			"id": "1764E888-85EA-EE11-AAEE-000D3A64F286",
+			"name": "neptune_connector_freshdesk",
+			"contextname": "neptune_connector_freshdesk"
+		}
+	],
 	"apis": [],
 	"name": "update_ticket",
-	"ver": "24.2.23.1415",
+	"ver": "24.3.25.1352",
 	"description": null,
 	"content": "file:///content.js",
 	"useAsGlobalScript": false,
