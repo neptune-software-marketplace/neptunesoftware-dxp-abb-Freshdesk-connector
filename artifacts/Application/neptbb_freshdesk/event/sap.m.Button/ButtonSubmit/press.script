@@ -7,3 +7,6 @@ sap.m.MessageToast.show("Your tickect has been created!");
 //Clear Form
 modelSimpleForm.setData({})
 DialogCreateTicket.close();
+
+var oFCL = PageDetails.getParent().getParent();
+	oFCL.setLayout(sap.f.LayoutType.OneColumnsBeginExpanded);

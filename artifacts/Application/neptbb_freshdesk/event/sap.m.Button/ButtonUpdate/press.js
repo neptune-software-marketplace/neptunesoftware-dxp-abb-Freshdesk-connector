@@ -18,4 +18,5 @@ sap.m.MessageToast.show("Successfully Updated!");
 
 //Clear Form
 modelSimpleFormUpdate.setData({});
-App.to(PageList);
+var oFCL = PageDetails.getParent().getParent();
+	oFCL.setLayout(sap.f.LayoutType.OneColumnsBeginExpanded);

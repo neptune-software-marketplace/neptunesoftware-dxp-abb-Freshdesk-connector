@@ -1209,7 +1209,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.3.25.167",
+	"ver": "24.3.26.1013",
 	"application": "neptune_connector_freshdesk",
 	"title": "Freshdesk Connector",
 	"description": "Freshdesk Connector",

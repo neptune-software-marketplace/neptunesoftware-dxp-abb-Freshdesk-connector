@@ -7,7 +7,7 @@
 	},
 	"name": "FreshDesk",
 	"description": null,
-	"ver": "24.3.25.1644",
+	"ver": "24.3.25.1650",
 	"enableCICD": true,
 	"apps": [
 		{

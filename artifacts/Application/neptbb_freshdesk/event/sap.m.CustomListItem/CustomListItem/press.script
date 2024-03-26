@@ -12,5 +12,7 @@ apiAPI_get_ticket_details(options).then((result)=>{
 modelSimpleFormUpdate.setData(result);
 })
 
+// Adding data Flexible Column Layout - Mid Column Page
 
-App.to(PageDetails);
+var oFCL = PageList.getParent().getParent();
+	oFCL.setLayout(sap.f.LayoutType.TwoColumnsMidExpanded);

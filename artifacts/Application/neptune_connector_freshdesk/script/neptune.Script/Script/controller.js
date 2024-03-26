@@ -28,8 +28,7 @@ const controller = {
         if (!sap.n.Planet9.requiredFieldsCheck(cockpitUtils.requiredFields)) {
             return;
         }
-        //console.log(modeloPageStart.oData)
-        // if (informDetailID.getValue() == "") {
+     //Save details entered
             apiSave({
                 data:modeloPageStart.oData ,
             }).then(function (req) {
@@ -38,38 +37,18 @@ const controller = {
                 }
 
                 sap.m.MessageToast.show("Connector Saved");
-                // modeloPageStart.oData.id = req.id;
-                // modeloPageStart.oData.updatedAt = req.updatedAt;
-                // modeloPageStart.oData.updatedBy = req.updatedBy;
-                // modeloPageStart.oData.createdAt = req.createdAt || req.updatedAt;
-                // modeloPageStart.oData.createdBy = req.createdBy;
-                // modeloPageStart.refresh();
-                //controller.list();
+               if(informDetailID.getValue() == ""){
+                modeloPageStart.oData.id = req.id;
+                modeloPageStart.oData.updatedAt = req.updatedAt;
+                modeloPageStart.oData.updatedBy = req.updatedBy;
+                modeloPageStart.oData.createdAt = req.createdAt || req.updatedAt;
+                modeloPageStart.oData.createdBy = req.createdBy;
+                modeloPageStart.refresh();
 
-                //cockpitUtils.dataSaved = modeloPageStart.getJSON();
+               }
                 cockpitUtils.toggleEdit(false);
             });
-        // } else {
-        //     apiSave({
-        //         data: { process: "update", details: modeloPageStart.oData },
-        //     }).then(function (req) {
-        //         if (req.message) {
-        //             sap.m.MessageToast.show(req.message);
-        //         }
-
-        //         sap.m.MessageToast.show("Connector Saved");
-        //         modeloPageStart.oData.id = req.id;
-        //         modeloPageStart.oData.updatedAt = req.updatedAt;
-        //         modeloPageStart.oData.updatedBy = req.updatedBy;
-        //         modeloPageStart.oData.createdAt = req.createdAt || req.updatedAt;
-        //         modeloPageStart.oData.createdBy = req.createdBy;
-        //         modeloPageStart.refresh();
-        //         //controller.list();
-
-        //         //cockpitUtils.dataSaved = modeloPageStart.getJSON();
-        //         cockpitUtils.toggleEdit(false);
-        //     });
-        // }
+        
     },
 };
 

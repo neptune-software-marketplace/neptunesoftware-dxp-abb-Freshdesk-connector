@@ -1,0 +1,13 @@
+
+const data = modelSimpleFormUpdate.getData();
+var options = {
+    data: {id: data.id},
+    
+};
+
+apiAPI_delete_ticket(options);
+
+sap.m.MessageToast.show("Tickect has been Deleted!");
+
+var oFCL = PageDetails.getParent().getParent();
+	oFCL.setLayout(sap.f.LayoutType.OneColumnsBeginExpanded);
