@@ -22,6 +22,7 @@
 	"name": "update_ticket",
 	"ver": "24.3.25.1352",
 	"description": null,
+	"folder": null,
 	"content": "file:///content.js",
 	"useAsGlobalScript": false,
 	"transpiledContent": null,

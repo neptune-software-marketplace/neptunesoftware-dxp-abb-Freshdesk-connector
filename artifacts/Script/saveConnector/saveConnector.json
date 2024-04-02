@@ -15,6 +15,7 @@
 	"name": "saveConnector",
 	"ver": "24.3.25.1459",
 	"description": null,
+	"folder": null,
 	"content": "file:///content.js",
 	"useAsGlobalScript": false,
 	"transpiledContent": null,

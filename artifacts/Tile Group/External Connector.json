@@ -10,7 +10,7 @@
 	"configMessage": {
 		"type": "None"
 	},
-	"title": "External Connectors ",
+	"title": "External Connector",
 	"subTitle": null,
 	"description": null,
 	"titleAlignment": null,
@@ -29,7 +29,7 @@
 	"enableShadeCalc": false,
 	"numTiles": null,
 	"enableMessage": false,
-	"ver": "24.3.25.1556",
+	"ver": "24.04.02.1216",
 	"headColor": null,
 	"headTxtClr": null,
 	"subheadTxtClr": null,
@@ -43,7 +43,7 @@
 	"imageMobileHeight": null,
 	"imageTabletHeight": null,
 	"imageHeight": null,
-	"name": "External Connectors ",
+	"name": "External Connector",
 	"cardContentWidth": null,
 	"cardContentAlign": null,
 	"cardPerRow": null,
@@ -62,13 +62,19 @@
 	"roleTag": null,
 	"cockpitTileGroup": true,
 	"package": "938bf627-faad-ee11-8925-0022489e23d1",
-	"roles": [],
+	"roles": [
+		{
+			"id": "01d34526-03c1-4acb-bb74-95e3b4d21a1b",
+			"name": "neptunesoftware-freshDesk",
+			"ver": "24.04.02.1215"
+		}
+	],
 	"tiles": [
 		{
 			"id": "3971d116-88ea-ee11-aaee-000d3a64f286",
 			"name": "External System Connector: Freshdesk Connector ",
 			"title": "Freshdesk Connector",
-			"ver": "24.3.25.166"
+			"ver": "24.04.02.1216"
 		}
 	],
 	"tilegroups": []

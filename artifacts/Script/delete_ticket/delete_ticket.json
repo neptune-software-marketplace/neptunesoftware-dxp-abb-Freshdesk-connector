@@ -22,6 +22,7 @@
 	"name": "delete_ticket",
 	"ver": "24.3.25.1452",
 	"description": null,
+	"folder": null,
 	"content": "file:///content.js",
 	"useAsGlobalScript": false,
 	"transpiledContent": null,

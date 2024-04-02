@@ -5,9 +5,9 @@
 	"git": {
 		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-Freshdesk-connector"
 	},
-	"name": "FreshDesk",
+	"name": "neptunesoftware-dxp-abb-freshDesk",
 	"description": null,
-	"ver": "24.3.25.1650",
+	"ver": "24.04.02.1213",
 	"enableCICD": true,
 	"apps": [
 		{
@@ -16,7 +16,7 @@
 			"title": "",
 			"description": "",
 			"package": {
-				"id": "938BF627-FAAD-EE11-8925-0022489E23D1"
+				"id": "938bf627-faad-ee11-8925-0022489e23d1"
 			}
 		},
 		{
@@ -25,7 +25,7 @@
 			"title": "Freshdesk Connector",
 			"description": "Freshdesk Connector",
 			"package": {
-				"id": "938BF627-FAAD-EE11-8925-0022489E23D1"
+				"id": "938bf627-faad-ee11-8925-0022489e23d1"
 			}
 		}
 	],
@@ -118,12 +118,18 @@
 		{
 			"id": "7fa71534-c0ea-ee11-aaee-000d3a64f286",
 			"description": null,
-			"name": "External Connectors "
+			"name": "External Connector"
 		}
 	],
 	"launchpad": [],
 	"certificates": [],
-	"role": [],
+	"role": [
+		{
+			"id": "01d34526-03c1-4acb-bb74-95e3b4d21a1b",
+			"name": "neptunesoftware-freshDesk",
+			"description": null
+		}
+	],
 	"systems": [],
 	"doc": [],
 	"wf_notifications": [],
